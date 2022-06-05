@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+
+body {
+  background-image:
+    radial-gradient(rgb(107, 186, 163) 26%, transparent 26%),
+    radial-gradient(rgb(107, 186, 163) 26%, transparent 26%);
+  background-position: 0px 0px, 8px 8px;
+  background-size: 16px 16px;
+  background-color: rgb(118, 196, 173);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+
+
+
+nav {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+
+}
+
+.nav_wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: "Fira Code", monospace;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  height: 40vh;
+  margin-bottom: 50px;
+  display: flex;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 4px;
+  color: #05ce84;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.left {
+  width: 50%;
+}
+
+header p {
+  color: gray;
+  font-size: 24px;
+}
+
+.hero_image {
+  background-image: url("assets/js-blue.svg");
+  width: 50%;
+  height: 100%;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section1 {
+  display: flex;
+  margin: 100px 0;
+  padding: 20px;
+}
+
+.section1 p {
+  color: gray;
+}
+
+h2 {
+  color: #05ce84;
+}
+
+.section1_left {
+  width: 50%;
+}
+
+.section1_right {
+  width: 50%;
+  background-image: url("assets/leftsec1.svg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section2_inner_wrapper {
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.section2_inner_wrapper p,
+li {
+  color: gray;
+}
+
+.logos h3 {
+  margin: 0 0 25px 0;
+}
+
+.logos {
+  background-color: #05ce84;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.logos .comp {
+  background-color: white;
+  margin: 0 10px;
+  padding: 10px 10px;
+  color: #05ce84;
+  border-radius: 10px;
+  transition: 0.3s;
+  filter: grayscale(100%);
+}
+
+.logos .comp:hover {
+  transform: scale(1.1);
+}
+
+.logos div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  color: #000000 !important;
+  text-decoration: none;
+  padding: 10px;
+  height: 54px;
+  transition: 0.3s;
+  background: #FEFEFE;
+  border: 2px solid #000000;
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.25));
+  text-align: center;
+  font-family: 'IBM Plex Mono';
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo:hover {
+  background: #81BDCC;
+  color: #0A4B61;
+  transition: 0.3s;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+footer {
+  width: 330px;
+  bottom: 0;
+  padding: 10px 10px;
+  margin: 0 auto;
+  display: flex;
+  place-content: center;
+  text-align: center;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+  background: #FEFEFE;
+  border: 2px solid #000000;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.25));
+  position: sticky;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li a {
+  margin: 0 10px;
+  height: 54px;
+  padding: 10px 22px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #000000 !important;
+  background: #FEFEFE;
+  border: 2px solid #000000;
+  font-family: 'Roboto Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.25));
+  text-align: center;
+}
+
+li a:hover {
+  background: #81BDCC;
+  color: #0A4B61;
+  transition: 0.3s;
+}
+
+@media (max-width: 1100px) {
+  .logos div {
+    flex-direction: column;
+  }
+
+  .logos {
+    margin: 0px 20px;
+  }
+
+  .logos .comp {
+    margin: 20px 0;
+  }
+}
+
+
+@media (max-width: 748px) {
+  .section1 {
+    flex-direction: column;
+  }
+
+  .section1_left {
+    width: 100%;
+  }
+
+  .section1_right {
+    display: none;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  margin: 48px 10px;
+  color: #05ce84;
+  transition: 0.3s;
+  text-decoration: none;
+
+  color: #000000 !important;
+  background: #FEFEFE;
+  border: 2px solid #000000;
+  font-family: 'Roboto Mono';
+  font-weight: 700;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.25));
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #000000;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black;
+  text-align: center;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background: #81BDCC;
+  color: #0A4B61;
+  transition: 0.3s;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.phone {
+  overflow: hidden;
+}
+
+
+
+
+.close {
+  background: #568692;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 3px solid #000000;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+
+.minimize {
+  background: #81BDCC;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 3px solid #000000;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+
+.maximize {
+  background: #8DCEDE;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 3px solid #000000;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+
+.bar {
+  border-bottom: 4px solid #000000;
+  background-color: #FEFEFE;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+
+.buttons {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  position: absolute;
+}
+
+.buttons li {
+  text-decoration: none;
+  margin: 0 1px;
+  display: inline;
+}
+
+.title {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 6px;
+  width: 100%;
+  color: #263139;
+
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  background-image:
+    radial-gradient(rgb(106, 183, 198) 18.8%, transparent 18.8%),
+    radial-gradient(rgb(106, 183, 198) 18.8%, transparent 18.8%);
+  background-position: 0px 0px, 4px 4px;
+  background-size: 8px 8px;
+  background-color: rgb(116, 194, 208);
+  float: right;
+}
+
+.window {
+  background: #FEFEFE;
+  display: flex;
+  width: 70%;
+  color: 000000;
+  margin: 0 auto;
+  flex-direction: column;
+  border: 4px solid #000000;
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.25));
+}
+
+.content {
+  display: inline;
+}
+
+.visual {
+  padding: 10px 10px;
+  width: 30%;
+  height: 400px;
+  background-image: url("assets/iphone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px 0px 20px 70px;
+  float: left;
+}
+
+.about {
+  background-image:
+    radial-gradient(rgb(106, 183, 198) 18.8%, transparent 18.8%),
+    radial-gradient(rgb(106, 183, 198) 18.8%, transparent 18.8%);
+  background-position: 0px 0px, 4px 4px;
+  background-size: 8px 8px;
+  background-color: rgb(116, 194, 208);
+  float: right;
+  width: 60%;
+  border-left: 4px solid #000000;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  color: #000000;
+  flex-direction: column;
+}
+
+.textabout {
+  background-color: white;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  color: #000000;
+  filter: grayscale(100%);
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 30px;
+  border: 4px solid #000000;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.textlabel {
+  font-weight: 700;
+  border: 4px solid #000000;
+  border-bottom: 0px;
+  padding: 5px 14px;
+  font-family: 'IBM Plex Mono';
+  background: #FEFEFE;
+  margin-bottom: -20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#important {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 20px 30px;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#pole{
+  padding: 20px 20px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#miniwindow{
+  background: #FEFEFE;
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+  width: 600px;
+  border: 4px solid #000000;
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.25));
+  position: absolute;
+  z-index: 9;
+}
+
+#bard {
+  border-bottom: 4px solid #000000;
+  background-color: #FEFEFE;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  cursor: move;
+  z-index: 10;
+}
+
+#closemini{
+  transition-duration: 0.3s;
+}
+
+#closemini:hover{
+  transition-duration: 0.3s;
+  filter: grayscale(100%);
+}
+
+#non{
+  filter: grayscale(100%);
+}

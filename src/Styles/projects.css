@@ -1,0 +1,44 @@
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .projekty {
+    background-color: #05ce84;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  .entry {
+    font-weight: bold;
+  }
+  
+  .naglowki {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .projekt {
+    background-color: #01a368;
+    border-radius: 10px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 1100px) {
+    .projekty {
+      margin: 15px 15px;
+      width: 95%;
+    }
+    .naglowki{
+      margin: 10px 5px;
+    }
+    .projekt{
+      margin: 10px 5px;
+    }
+  }

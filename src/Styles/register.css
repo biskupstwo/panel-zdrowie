@@ -1,0 +1,73 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 50px;
+  color: grey;
+}
+.formu {
+  background-color: #05ce84;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  width: 50%;
+  color: white;
+}
+
+.formu input, .formu select {
+  background-color: white;
+  width: 100%;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  color: #05ce84;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  border: 1px solid white;
+}
+
+.formu button {
+  background-color: white;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  color: #05ce84;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.formu button:hover {
+  background-color: #111;
+  color: #04aa6d;
+  border: 1px solid #111;
+  transition: 0.3s;
+}
+
+.formu label {
+  font-weight: 700;
+}
+
+.ree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ree p {
+  color: gray;
+}
+.ree a {
+  color: #05ce84;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.invalidFeedback{
+  color: #dc3545;
+  margin-bottom: 10px;
+}
