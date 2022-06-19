@@ -11,7 +11,7 @@
             <p class="title">Profil</p>
         </div>
 
-        <div id="pole">
+        <div class="pole">
             <?php echo $_SESSION['login']; ?>
             <span class="dot"></span>
             <?php echo get_role($_SESSION['user_role']); ?>
